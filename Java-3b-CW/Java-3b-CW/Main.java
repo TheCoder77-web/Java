@@ -26,7 +26,7 @@ class Main {
     System.out.println("\t\tMary");
     
     // print one, two and three on separate lines using a single line of code
-    System.out.println("\none \ntwo \nthree");
+    System.out.println("one \ntwo \nthree");
 	
   }
   
