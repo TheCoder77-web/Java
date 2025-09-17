@@ -13,7 +13,7 @@ class Main {
     3) number of items in a cart 
 */
    int age = 16;
-   System.out.println(age);
+   System.out.println("The student's age is " + age);
    int members = 4;
    System.out.println(members);
    int items = 10;
@@ -27,7 +27,7 @@ class Main {
 */
 
     double temp = 37.4;
-    System.out.println(temp);
+    System.out.println("The temperature is " + temp);
     double gpa = 97.8;
     System.out.println(gpa);
     double rate = 1.087;
@@ -40,7 +40,7 @@ class Main {
 */
 
     String lName = "Cao";
-    System.out.println(lName);
+    System.out.println("The students last name is " + lName);
     char fInitial = 'R';
     System.out.println(fInitial);
     String desc = "Used for cleaning";
@@ -53,7 +53,7 @@ class Main {
 */
 
     boolean isLightsOn = true;
-    System.out.println(isLightsOn);
+    System.out.println("The status of the lights being on is " + isLightsOn);
     boolean isGameOver = false;
     System.out.println(isGameOver);
     boolean isBatteryCharging = false;
