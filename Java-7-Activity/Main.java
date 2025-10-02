@@ -68,6 +68,13 @@ class Main {
       double X = (-b + Math.sqrt(Math.pow(b,2) - 4*a*c))/(2*a);
       System.out.println("Value of x is " + X); 
 
+      System.out.println("Enter the value for a, b, c ");
+      double a2 =Input.readDouble();
+      double b2 =Input.readDouble(); 
+      double c2 =Input.readDouble();    
+      double X2 = (-b2 - Math.sqrt(Math.pow(b2,2) - 4*a2*c2))/(2*a2);
+      System.out.println("Value of x is " + X2); 
+
     // **************************************************
     // ******** Don't write any code below here. ********
     // **************************************************
