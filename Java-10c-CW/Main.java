@@ -4,8 +4,16 @@ class Main {
   }
 
   void init(){
+    System.out.println("Enter the Number of Tickets to Purchased");
+    int numTickets = Input.readInt();
+    String total = groupSavings(numTickets);
+    System.out.println(total);  
 
-        
+    System.out.println("Enter Total Amount Spent and Number of Cans Purchased");
+    double totalAmt = Input.readDouble();
+    int numCans = Input.readInt();
+    String savings = groceryDiscount(totalAmt,numCans);
+    System.out.println(savings);
   }
 
   /*
@@ -16,7 +24,17 @@ class Main {
     9 to 16 tickets : each ticket costs $10.50
     over 16 tickts  : each ticket costs $8.50
   */
-
+    String groupSavings(int tickets){
+      if(tickets >= 1 && tickets <= 8){
+        return "$11.00";
+      }else if(tickets >= 9 && tickets <= 16){
+        return "$10.50";
+      }else if(tickets > 16){
+        return "$8.50";
+      }else{
+        return "$0";
+      }
+    }
   
   /*
     Problem 2:
@@ -29,6 +47,14 @@ class Main {
       Spend over $200 and purchase more than 4 cans: $25 savings
       Otherwise: No discount.
     */
-
+    String groceryDiscount(double spent, int cans){
+      if(spent >= 100 && spent <= 200 && cans >= 3){
+        return "$10 Savings";
+      }else if(spent > 200 && cans > 4){
+        return "$25 Savings";
+      }else{
+        return "No Savings";
+      }
+    }
 
 }
