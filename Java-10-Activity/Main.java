@@ -24,7 +24,7 @@ class Main {
    double w = Input.readDouble();
    double h = Input.readDouble();
    String outcome = BMI(w,h);
-   System.out.println(outcome);
+   System.out.println("BMI is " + outcome);
   
    System.out.println("Enter Weight In Pounds");
    double weightInPounds = Input.readDouble();
