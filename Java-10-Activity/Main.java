@@ -61,8 +61,8 @@ class Main {
   Display to console "Student Graduating" or "Student NOT Graduating" depending on the value returned by the function.
 */
 
-  boolean isGraduating(String gLvl, int credits){
-    if(gLvl == "Senior" && credits >= 44){
+  boolean isGraduating(int gLvl, int credits){
+    if(gLvl == 12 && credits >= 44){
       return true;
     }else{
       return false;
@@ -109,7 +109,7 @@ class Main {
     }else if(pounds > 15 && pounds <= 25){
       return 10.00;
     }else if(pounds > 25){
-      return 10.00 + (pounds - 25);
+      return 10.00 + (pounds - 25)*0.02;
     }else{
       return 0;
     }
