@@ -15,7 +15,9 @@ class Main {
     approxPI = 4(1 - 1/3 + 1/5 - 1/7 + 1/9) = 3.3396825396825403
   */
 
-    double
+    double approxPI(){
+      
+    }
   
   /* 2:  In order to get a more accurate approximation of PI (say, to the thousandths place), run your loop pasing multiples of ten from 100 through 100000 for the # of terms).
   */
