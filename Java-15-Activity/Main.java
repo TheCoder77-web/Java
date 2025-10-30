@@ -12,13 +12,13 @@ class Main {
     System.out.println(spaces(5));
 
     /* 2  */  print("\n\n#2: Harmonic");
-    
+    System.out.println(harmonic(6));
 
     /* 3  */  print("\n\n#3: Sine");
-    
+    System.out.println(sine(7, Math.PI/6));
 
     /* 4  */  print("\n\n#4: Fibonacci series");
-    
+  
 
     /* 5  */  print("\n\n#5: Multiplication Table");
     
@@ -57,10 +57,24 @@ class Main {
   1/1 + 1/2 + 1/3 + ...+ 1/N       
 */
 
+    double harmonic(int N){
+      double sum=0;
+      for(int x=1; x<=N; x++){
+        sum += 1./x;
+      }
+      return sum;
+  }
 
 /* #3: Approximate the Sine function. Using the formula in Sine.PNG/Sine.png, write a function sine() that accepts the number of terms to combine and the degree in radians (pi/6) and returns the sum.   
 */
 
+  double sine(int N, double radian){
+    double sum=0;
+    for(int i=0; i<=N; i++){
+      sum+= (Math.pow(-1,i)*Math.pow(radian,2*i+1))/fact(2*i+1);
+    }
+    return sum;
+  }
 
 /* #4: Write a function fib() that accepts an integer N and displays the first N Fibonacci numbers. The sequence of #s is: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,...
   Example: N=6 , the function displays: 0, 1, 1, 2, 3, 5        
