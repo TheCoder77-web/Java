@@ -1,0 +1,22 @@
+Challenge 1: 
+You are given several functions which you will need to use to create a menu system. The code you will write is in the init() function.
+
+menu() function: Use this to display the menu choices of options, which are:
+
+    Welcome to "Easy Life" Computing!
+    ----------------------------------
+    Select from the following choices:
+    1) Roll a dice
+    2) Draw a card
+    3) Who's watching me?
+    4) Exit "Easy Life" Computing!
+    ----------------------------------
+    Choice: 
+    
+Once the menu is displayed, you will need to get the user's choice (1 to 4 as shown above). If the user chooses 1, call the rollDice() function. If the user chooses 2, call the drawCard() function. If the user chooses 3, call the watchingYou() function. If the user chooses 4, end the program.
+
+rollDice() function: - will roll a dice
+
+drawCard() function: - will draw a card
+
+watchingYou() function - will stare you down!
