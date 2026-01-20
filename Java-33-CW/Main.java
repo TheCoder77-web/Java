@@ -23,14 +23,25 @@ class Main {
         grade over 70.
       */
     print("Students with avg over 70:");
-    
+    if(student1.calculateAvg() > 70){
+      print(student1.firstName);
+    }
+
+    if(student2.calculateAvg() > 70){
+      print(student2.firstName);
+    }
 
     /*
     2)  Display the first name of all students that are sophomores 
         or below, and whose average grade is between 70 and 80 inclusive.
       */   
     print("\nStudents in gr.10 or below with avg 70-80:");
-    
+    if(student1.calculateAvg() >= 70 && student1.calculateAvg()<= 80 && student1.gradeLevel <= 10){
+      print(student1.firstName);
+    }
+    if(student2.calculateAvg() >= 70 && student2.calculateAvg()<= 80 && student2.gradeLevel <= 10){
+      print(student2.firstName);
+    }
    
   }
 
