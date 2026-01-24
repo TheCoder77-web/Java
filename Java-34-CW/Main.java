@@ -33,10 +33,10 @@ class Main {
     int count =0;
     for(int x=0;x<=studentList.length-1;x++){
       Student student = studentList[x];
-      print("Student " + (x+1) + ": "+ student.calculateAvg());
+      print("Student "+(x+1)+": "+student.calculateAvg());
     
     // Task 2: Display the number of students with an average above 80
-    if(student.calculateAvg() > 80){
+    if(student.calculateAvg()>80){
         count++;
       }
     }
