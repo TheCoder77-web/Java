@@ -35,10 +35,11 @@ public class Main {
     System.out.println("Server is listening on port " + port); 
       
     //Problem 1: Create a default route that sends a string that has your name and states that this is your default route.
-
+    server.createContext("/", new RouteHandler("My name is Ruien Cao and this is my default route."));
     
     //Problem 2: Create a route called myWebPage that servers(sends) a webpage stored in the file index.html.  You will need to read the file into a string and then send it.
-      
+    String html = Input.readFile("index.html");
+    server.createContext("/myWebPage", new RouteHandler(html));
 
       
     }    
