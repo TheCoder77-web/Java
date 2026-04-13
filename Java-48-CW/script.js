@@ -9,7 +9,7 @@ async function init(){
 
   let employees = data; 
 
-  for(let i=0; i<employees.length; i++){
+  for(let i=0; i < employees.length; i++){
     let employee = employees[i];    
     console.log("First Name: " + employee.FirstName);
     console.log("Last Name: " + employee.LastName);
