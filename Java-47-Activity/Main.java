@@ -51,14 +51,14 @@ class Main {
 
     // Problem 3: Create a route called 'employees' that gets Employee ID and Title of the first 5 entries in the Employees table.
     sql  = "Select * from employees";
-    sql += "LIMIT 15";
+    sql += " LIMIT 15";
     server.createContext("/employees", new RouteHandler(db,sql)) ;
 
     // Problem 4: Create a route called 'albumsinfo' that gets the albums with the track information and artists information. (Limit to 5 records)
     sql  = "Select * From tracks";
     sql += "Inner Join albums ON albums.albumid=tracks.albumid";
     sql += "Inner Join artists ON albums.artistid=artists.artistid";
-    sql += "LIMIT 15";
+    sql += " LIMIT 15";
     server.createContext("/albumsinfo", new RouteHandler(db,sql));
 
     // Problem 5: Create a route called 'customersongs' that gets customer first & last names, song names and date of purchase (i.e., Invoice Date) of each song. (Limit to 5 records)
@@ -66,7 +66,7 @@ class Main {
     sql += "Inner Join invoice_items ON invoice_items.trackid=tracks.trackid";
     sql += "Inner Join invoices ON invoices.invoiceid=invoice_items.invoiceid";
     sql += "Inner Join customers ON invoices.customerid=customers.customerid";
-    sql += "LIMIT 15";
+    sql += " LIMIT 15";
     server.createContext("/customersongs", new RouteHandler(db,sql));
 
     
