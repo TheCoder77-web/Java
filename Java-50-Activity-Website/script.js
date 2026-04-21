@@ -6,7 +6,7 @@ let songs;
 async function init(){
   // PART 2: Create the webpage. You must: 
   // a) Get the data from your database server and store into a variable.  
-  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; 
+  let link = "https://caverned-phantom-v6rv96w4gjxqfw7jg-8500.app.github.dev"; 
   // The URL above must be running in a separate broswer tab. (Alternate use: http://localhost:8500 )
   let route= "/songs";
 
@@ -20,14 +20,23 @@ async function init(){
 
 // b) Write a function that accepts an array of JSON that contains song information, generates an info card for each track(song) with song name, album title and composer. Display the cards on a webpage. (see "WebPagePicture.PNG" to determine the types of HTML elements to use).
 function generateCards(songs){
-  // import the output div and initialize the 'build' variable
-
-  // create a for loop to traverse the array
+  let output = document.getElementById("output");
+  let build ="";
   
-  // Inject the build content into the output container
-  
-}
+  for(let i=0; i<songs.length; i++){
+    let song = songs[i];
+    build += `<div class="card">`;
+    build += `<h3>Song Name</h3>`;
+    build += `<p>${song.Name}</p>`;
+    build += `<div>Album </div>`;
+    build += `<h2>${song.Title}</h2>`;
+    build += `<div>Composer</div>`;
+    build += `<h2>${song.Composer}</h2>`;
+    build += `<hr>`;
+    build += `</div>`;
+  }
 
+  output.innerHTML = build;
 // c) Add CSS rules to make the output div a flex container and provide appropriate styling for the card. (see picture "WebPagePicture.PNG").
 
-  
+} 

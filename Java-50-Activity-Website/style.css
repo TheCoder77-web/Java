@@ -73,5 +73,46 @@ nav a:hover{
   
 }
 #output{
-
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dff2ff;
+  margin:5px;
+  padding:5px;
+}
+.card{
+  /*flex:1;   THIS SQUISHES */
+  /*flex-basis:150px   */
+  width:450px;
+  margin:5px;
+  padding:5px;
+  border:1px solid black;
+  text-align:center;
+  background-color:#dedfe7;
+}
+/* target all h4 elements*/
+h4{
+  color:#0000ff;
+}
+/*target all the paragraphs in the card class*/
+.card p{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card div{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:15px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card h2{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
 }
