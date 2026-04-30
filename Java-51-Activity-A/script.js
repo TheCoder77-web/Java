@@ -18,12 +18,12 @@ function generateCards(employees){
    
   for(let i=0; i<employees.length; i++){
     let employee = employees[i];
-    build += `<div class="card" >`;
-    build +=   `<h3> Employee ID : ${employee.EmployeeId}</h3>`;
-    build +=   `<div> First Name : ${employee.FirstName}</div>`;
-    build +=   `<div> Last Name : ${employee.LastName}</div>`;
+    build += `<div class="card">`;
+    build +=   `<h3> Employee ID: ${employee.EmployeeId}</h3>`;
+    build +=   `<div> First Name: ${employee.FirstName}</div>`;
+    build +=   `<div> Last Name: ${employee.LastName}</div>`;
     build +=   `<hr>`;
-    build +=   `<p> City : ${employee.City}</p>`;    
+    build +=   `<p> City: ${employee.City}</p>`;    
     build += `</div>`;
   }
   output.innerHTML = build;  
