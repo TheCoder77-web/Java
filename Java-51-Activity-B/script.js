@@ -36,6 +36,7 @@ function generateCards(songs){
 
     count++;
   }
+  
   cardCount.innerHTML = `<h2>${count} track(s) found</h2>`;
   output.innerHTML = build;
 }
